@@ -5,10 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shutter Popup</title>
-  <script src="popup.js"></script>
+  <style>
+    #cameraOutput {
+      width: 200px;
+      height: 150px;
+      border: 1px solid black;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <h1>Shutter</h1>
+  <div id="cameraOutput">
+   <video id="videoCam"></video>
+    <!-- <video id="cameraPreview" autoplay muted width="200" height="400"></video> -->
+  </div>
   <button id="confineButton">Confine Camera</button>
+  <button id="startBtn" onclick="openCam()">Open Camera</button>
 </body>
+<script src="popup.js"></script>
 </html>
